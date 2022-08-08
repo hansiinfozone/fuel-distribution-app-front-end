@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="card">
+    <h3 class="text-center"> Order Details</h3>
+    <div class="card-body" *ngIf="order">
+
+      <div>
+        <label><b>Reference Number: </b></label> {{order.referenceNumber}}
+      </div>
+      <div>
+        <label><b>Gas Station id: </b></label> {{order.gasStationId}}
+      </div>
+      <div>
+        <label><b>Gas station name: </b></label> {{order.gasStationName}}
+      </div>
+      <div>
+        <label><b>Fuel Type: </b></label> {{order.typeOfFuel}}
+      </div>
+      <div>
+        <label><b>Capacity: </b></label> {{ order.capacityInLitres}}
+      </div>
+      <div>
+        <label><b>Status: </b></label> {{order.status}}
+      </div>
+      <div>
+        <button class="btn btn-success" (click) ="onSubmit()">Dispatch</button>
+      </div>
+      <div>
+      </div>
+
+    </div>
+    </div>
+</div>

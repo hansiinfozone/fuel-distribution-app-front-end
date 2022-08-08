@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\order-form",
+    "\\src\\app\\order-list",
+    "\\src\\app\\order-view",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\order-form\\order-form.component.ts",
+  "PreviewInSolutionExplorer": false
+}

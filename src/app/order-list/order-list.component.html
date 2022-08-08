@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <h3 class="text-center"> Order List</h3>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Reference Number</th>
+            <th>Gas station Id</th>
+            <th> Gas Station Name</th>
+            <th> Fuel Type</th>
+            <th> Capacity </th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders">
+            <td><a [routerLink]="['/order', order.referenceNumber]">{{order.referenceNumber}}</a></td>
+            <td> {{ order.gasStationId}}</td>
+            <td> {{ order.gasStationName}}</td>
+            <td> {{ order.typeOfFuel}}</td>
+            <td> {{ order.capacityInLitres}}</td>
+            <td> {{ order.status}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
